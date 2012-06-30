@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="gmail_time">
+		<item>发送当天任务数据</item>
+		<item>发送历史任务数据</item>
+		<item>发送倒数任务数据</item>
+		<item>发送目标数据</item>
+		<item>发送心语数据</item>
+	</string-array>
+	<string-array name="gmail_time_value">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+		<item>4</item>
+		<item>5</item>
+	</string-array>
+</resources>

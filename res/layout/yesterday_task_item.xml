@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:padding="5dp"
+	android:background="@drawable/layoutbg"
+	android:gravity="center_vertical"
+	>
+
+	<!-- 任务名称、时间和地点  时间提醒和地点提醒图标 -->
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<RelativeLayout android:orientation="horizontal"
+			android:layout_width="@dimen/task_item_name_width" android:layout_height="wrap_content">
+			<com.planbetter.view.AlwaysMarqueeTextView android:ellipsize="marquee" android:marqueeRepeatLimit="marquee_forever"
+			android:focusableInTouchMode="true" android:focusable="true"
+				android:id="@+id/yesterday_task_info" android:layout_width="160dp"
+				android:layout_height="wrap_content" android:textColor="@android:color/black"
+				android:scrollHorizontally="true"
+				android:singleLine="true"
+				android:textSize="20sp" />
+			<LinearLayout android:orientation="horizontal" android:layout_marginTop="5dp"
+				 android:layout_marginLeft="10dp" android:layout_alignParentRight="true" android:layout_toRightOf="@id/yesterday_task_info"
+				android:layout_width="wrap_content" android:layout_height="wrap_content">
+				<ImageView android:id="@+id/yesterday_star_rank"  
+					android:layout_width="wrap_content" android:layout_height="wrap_content" 
+					/>
+			</LinearLayout>
+		</RelativeLayout>
+		<LinearLayout android:orientation="horizontal"
+			android:layout_width="@dimen/task_item_name_width" android:layout_height="wrap_content">
+			<com.planbetter.view.AlwaysMarqueeTextView android:ellipsize="marquee" android:marqueeRepeatLimit="marquee_forever"
+					android:focusableInTouchMode="true" android:focusable="true" android:scrollHorizontally="true"
+					android:layout_width="210dp" android:id="@+id/yesterday_task_time_position_textview"
+					android:layout_height="wrap_content" android:textColor="@android:color/black"
+					android:singleLine="true"
+					android:textSize="15sp" />
+			
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout android:gravity="right" android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" >
+			<Button android:id="@+id/yesterday_task_edit_btn" android:layout_width="fill_parent"
+				android:layout_marginLeft="2dp" android:background="@drawable/yesterday_delete_btn_bg"
+				android:layout_height="fill_parent" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>  

@@ -1,0 +1,35 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" android:key="first_preferencescreen">
+    
+	<PreferenceCategory android:title="@string/ui_settings_label" android:order="1">
+		<EditTextPreference android:key="login_user"
+			android:title="@string/ui_login_label"
+			android:summary="@string/ui_login_desc"
+			android:singleLine="true"
+			android:dialogMessage="@string/ui_login_dialog_msg"
+			android:persistent="true"/>
+		<EditTextPreference android:key="login_password"
+			android:title="@string/ui_password_label"
+			android:summary="@string/ui_password_desc"
+			android:singleLine="true"
+			android:password="true"
+			android:dialogMessage="@string/ui_password_dialog_msg"
+			android:persistent="true"/>
+	    
+				<EditTextPreference android:key="imap_folder"
+					android:title="@string/ui_imap_folder_label"
+					android:summary="@string/ui_imap_folder_desc"
+					android:singleLine="true"
+					android:dialogMessage="@string/ui_imap_folder_label_dialog_msg"
+					android:persistent="true"
+					android:defaultValue="PlanBetter"/>
+				<ListPreference android:key="max_items_per_sync"
+					android:title="@string/ui_max_items_per_sync_label"
+					android:summary="@string/ui_max_items_per_sync_desc"
+					android:entries="@array/gmail_time"
+					android:entryValues="@array/gmail_time_value"
+					android:defaultValue="1"
+					android:persistent="true"/>
+			 		
+	</PreferenceCategory>
+
+</PreferenceScreen>

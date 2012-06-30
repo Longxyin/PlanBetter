@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:layout_weight="1" android:background="@drawable/task_tomorrow_bg"
+	android:fillViewport="true">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<LinearLayout android:orientation="horizontal"
+			android:layout_height="wrap_content" android:layout_marginLeft="5dp"
+			android:layout_width="fill_parent" android:layout_marginTop="10dp"
+			android:layout_marginBottom="5dp" android:layout_gravity="center_horizontal">
+			<TextView android:textColor="@android:color/black"
+				android:layout_width="wrap_content" android:layout_marginLeft="8dp"
+				android:layout_height="wrap_content" android:typeface="serif"
+				android:text="未来" android:layout_alignParentLeft="true"
+				android:textSize="28.0sp" android:id="@+id/textView_future"></TextView>
+			<TextView android:textColor="@android:color/black"
+				android:layout_width="wrap_content" android:layout_marginLeft="8dp"
+				android:layout_height="wrap_content" android:typeface="serif"
+				android:text="掌握在我们手中……" android:textSize="15.0sp"
+				android:layout_below="@id/textView_future" android:id="@+id/textView_futuremessage"></TextView>
+			<Button android:layout_height="wrap_content"
+				android:layout_width="wrap_content" android:id="@+id/addTask" android:text="增加活动"
+				android:textSize="13sp" android:background="@drawable/bg_add_task_btn"
+				android:drawableLeft="@drawable/tomorrowtask_love"
+				android:layout_marginLeft="5dp" android:layout_below="@id/textView_future"
+				android:textColor="#000"></Button>
+		</LinearLayout>
+		<RelativeLayout android:layout_height="wrap_content" android:layout_marginTop="5dp"
+			android:layout_width="fill_parent" android:layout_gravity="left">
+			<com.planbetter.view.AlwaysMarqueeTextView
+				android:textColor="@android:color/black" android:layout_width="200dp"
+				android:layout_marginLeft="8dp" android:layout_height="wrap_content"
+				android:scrollHorizontally="true" android:ellipsize="marquee"
+				android:typeface="serif"
+				android:singleLine="true" android:layout_alignParentLeft="true"
+				android:focusable="true" android:textSize="20.0sp" android:id="@+id/textView_datematter"></com.planbetter.view.AlwaysMarqueeTextView>
+			<TextView android:textColor="@android:color/black"
+				android:layout_width="200dp" android:layout_marginLeft="8dp"
+				android:layout_height="wrap_content" android:typeface="serif"
+				android:layout_alignParentLeft="true"
+				android:textSize="15.0sp" android:layout_below="@id/textView_datematter"
+				android:id="@+id/textView_datemattermessage"></TextView>
+			<TextView android:textColor="@android:color/black"
+				android:layout_width="85dp" android:layout_marginLeft="2dp"
+				android:gravity="center_horizontal" android:layout_height="wrap_content"
+				android:layout_toLeftOf="@+id/textView_tomorrow_day"
+				android:typeface="serif" android:textSize="50.0sp"
+				android:layout_alignBaseline="@+id/textView_datemattermessage"
+				android:id="@+id/textView_daysleft"></TextView>
+			<TextView android:textColor="@android:color/black"
+				android:layout_width="wrap_content" android:gravity="center"
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true" android:typeface="serif"
+				android:text="天" android:textSize="20.0sp" android:id="@+id/textView_tomorrow_day"></TextView>
+		</RelativeLayout>
+		<ListView 
+			android:id="@+id/tomorrow_task_listview" android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:layout_marginTop="5dp"
+			android:dividerHeight="10dp" android:layout_marginBottom="10dp"
+			android:cacheColorHint="@android:color/transparent"
+			android:divider="@android:color/transparent" android:listSelector="@android:color/transparent"
+			android:drawSelectorOnTop="false">
+			</ListView>
+	</LinearLayout>
+</ScrollView>

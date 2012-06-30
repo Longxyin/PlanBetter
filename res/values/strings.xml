@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android" 
+	xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="app_name">PlanBetter</string>
+	<!-- activity标题 -->
+	<string name="task_title">任务</string>
+	<string name="goal_title">目标</string>
+	<string name="tips_title">心语</string>
+	<string name="history_title">日历</string>
+	<string name="setup_title">设置</string>
+	<string name="help_title">帮助</string>
+	<string name="about_title">关于</string>
+	<!-- 菜单项名称 -->
+	<string name="menu_task">任务</string>
+	<string name="menu_goal">目标</string>
+	<string name="menu_tips">心语</string>
+	<string name="menu_history">日历</string>
+	<string name="menu_setup">Gmail备份</string>
+	<string name="menu_help">帮助</string>
+	<string name="menu_about">关于</string>
+	<string name="menu_exit">退出</string>
+	<string name="menu_modify_location">修改位置</string>
+	<string name="menu_delete_location">删除位置</string>
+	<string name="menu_widget">桌面小工具</string>
+	<!-- 任务信息 -->
+	<string name="task_time_title">时间：</string>
+	<string name="task_position_title"> 地点：</string>
+	<!-- label -->
+	<string name="label_today">今天</string>
+	<string name="label_tomorrow">明天</string>
+	<string name="label_yesterday">昨天</string>
+	<string name="label_history">所有活动</string>
+	<!-- button text -->
+	<string name="add_task_label">添加活动</string>
+	<!-- 对话框 -->
+	<string name="add_task_dialog_title">添加活动</string>
+	<string name="edit_task_dialog_title">编辑活动</string>
+	<string name="save_task_dialog_text">保存</string>
+	<string name="cancel_dialog_text">取消</string>
+	<string name="task_rank_first_text">重要且紧急</string>
+	<string name="task_rank_second_text">紧急不重要</string>
+	<string name="task_rank_third_text">重要不紧急</string>
+	<string name="task_rank_fourth_text">不重要不紧急</string>
+	<string name="task_time_alert_text">打开时间提醒功能</string>
+	<string name="task_time_repeat_dialog_title">设置活动截止日期</string>
+	<string name="task_time_pull_dialog_title">推迟到</string>
+	
+	<string name="planbetter_widget_title">PlanBetter Widget</string>
+	<string name="current_goal_intro">你必须知道的人生三大目标</string>
+	
+	<!-- Tab -->
+	<string name="goal_tab_current_text">当前目标</string>
+	<string name="goal_tab_past_text">历史目标</string>
+	<!-- menu -->
+	<string name="task_item_long_click_menu_title">菜单选项</string>
+	<string name="task_item_long_click_menu_edit">编辑</string>
+	<string name="task_item_long_click_menu_delete">删除</string>
+	<string name="task_item_long_click_menu_pull">推迟</string>
+	<!-- notifycation -->
+	<string name="task_notification">左右滑动可切换视图</string>
+	
+	<!-- 闹钟提示对话框 -->
+	<string name="task_alert_dialog_title">活动提醒</string>
+	<string name="task_alert_dialog_confirm">我知道了</string>
+	
+	<string name="edit_goal_dialog_title">编辑目标</string>
+	<string name="edit_goal_dialog_tv">目标:</string>
+	<string name="edit_goal_dialog_et_hint">请输入目标</string>
+	<string name="edit_goal_dialog_ok">保存</string>
+	<string name="edit_goal_dialog_cancel">取消</string>	
+	<string name="delete_dialog_text">删除</string>
+
+	<!-- 关于 -->
+	<string name="about_string">最佳计划 v1.0\n版权所有：胡龙
+		张慧杰\n联系邮箱：\nyfnick2010@gmail.com\n欢迎提出宝贵意见，谢谢！</string>
+
+	<!-- 帮助 -->
+	<!--  
+	<string name="help_string">\tPlanBetter计划更好点是一个时间管理软件，这个软件专注于历史、今天和未来，通过自身目标的设立和鼓励自己的心语督促自己利用好每一天的时间去使自己计划更好点，达到自己想要的目标。
+		整个软件共有任务、目标、心语、历史、设置这几个主要菜单项\n\n
+		\t1
+		任务；任务专注于昨天、今天和未来。滑动屏幕可以进行昨天、今天和未来的切换。快捷回顾昨天的时间安排状况，并且通过帕累托原则将任务划分轻重缓急，合理安排今天，并有闹钟提醒、重复任务、widget桌面提示等功能，采用倒数日的方式规划明天，就是任务项的特色所在。\n\n
+		\t2
+		目标：目标分为两部分，当前目标和历史目标。当前目标显示的你当前的三个目标，当你对当前目标进行修改的时候，这些目标选项自动保存至历史目标。这个设计是为了让使用这个软件的人时刻牢记自己的目标，为未来奋斗。\n\n
+		\t3 心语：心语即自己的心路历程，你可以写下任何你想说的话，软件会保存这些内容，鼓励自己一步步向前。\n\n
+		\t4 历史：历史的主界面是个日历，点击这个日历，可以快捷的查看你当天的任务完成状况，让你不错过你的每一段历史。\n\n
+		\t5 设置：</string>
+	-->
+	<!-- edittext -->
+	<!-- 今天活动列表为空时默认显示内容 -->
+	<string name="task_list_view_empty">今天您还没有添加任何活动呢,亲</string>
+	<string name="heart_list_view_empty">开始记录您的心路历程吧 :)</string>
+	<string name="tomorrow_task_list_view_empty">您还没有任何倒数打算奥,亲</string>
+	<string name="history_task_list_view_empty">当前日期没有任何历史内容</string>
+	<string name="yesterday_task_list_view_empty">昨天您很懒,没有添加任何活动 :)</string>
+
+	<string name="tts_pause">.</string>
+	<string name="today_task_widget_name" msgid="5948202656358353180">"PlanBetter活动提醒"</string>
+    <string name="pager_footer" msgid="8874468132852452517">"第 <xliff:g id="CURPAGE">%1$d</xliff:g> 条（共 <xliff:g id="NUMPAGES">%2$d</xliff:g> 条）"</string>	
+    <string name="tomorrow_task_widget_name">PlanBetter倒计时</string>
+    
+     <string name="setting_one">gmail备份</string>
+    <string name="setting_two">存储卡备份</string>
+    <string name="setting_three">撤去背景</string>
+    
+    <string name="ui_sync_button_label_idle">备份</string>
+	<string name="ui_sync_button_label_done">再次备份</string>
+	<string name="ui_sync_button_label_error">尝试备份</string>
+	<!-- TODO(chstuder): Rename the following string resource. -->
+	<string name="ui_sync_button_label_syncing">停止备份</string>
+	<string name="ui_sync_button_label_canceling">停止\u2026</string>
+	
+	<string name="status_idle">空闲</string>
+		<string name="status_idle_details">上一次备份: <xliff:g id="last_backup_date">%1$s</xliff:g></string>
+		<string name="status_idle_details_never">从未</string>
+	<string name="status_sync">正在备份</string>
+		<string name="status_sync_details">正在备份 <xliff:g id="backed_up_items">%1$d</xliff:g>/<xliff:g id="total_items">%2$d</xliff:g> 条\u2026</string>
+	<string name="status_login">正在备份 </string>
+		<string name="status_login_details">登陆中……\u2026</string>
+	<string name="status_done">备份完成</string>
+		<string name="status_done_details_max_per_sync"> 当前选项已经完成了备份.</string>
+		<string name="status_done_details_noitems">没有要备份的内容.</string>
+		<plurals name="status_done_details">
+	        <item quantity="one">成功备份 <xliff:g id="total_items">%1$d</xliff:g> item.</item>
+	        <item quantity="other">成功备份 <xliff:g id="total_items">%1$d</xliff:g> items.</item>
+	    </plurals>
+	<string name="status_unknown_error">出错了</string>
+		<string name="status_unknown_error_details">错误原因:\n<xliff:g id="error_description">%1$s</xliff:g></string>
+	<string name="status_auth_failure">登陆错误</string>
+		<string name="status_auth_failure_details">请确保你的邮箱支持IMAP，并且用户名和密码正确</string>
+	<string name="status_calc">备份中</string>
+		<string name="status_calc_details">正在计算\u2026</string>
+	<string name="status_canceled">取消</string>
+		<string name="status_canceled_details">%1$d/%2$d 个条目已经成功备份完成.</string>
+	
+	<string name="ui_status_label">备份</string>
+	<string name="ui_settings_label">设置</string>
+	
+	<string name="ui_login_label">账号</string>
+	<string name="ui_login_desc">Google账号/邮箱地址.</string>
+	<string name="ui_login_dialog_msg">提示: 改变邮箱名会清空密码信息.</string>
+	
+	<string name="ui_password_label">密码</string>
+	<string name="ui_password_desc">Google账号密码.</string>
+	<string name="ui_password_dialog_msg">这个密码将会记录在这个设备上但仅会用来登陆邮箱.</string>	
+	
+	<string name="ui_imap_folder_label">邮箱标签</string>
+	<string name="ui_imap_folder_desc">设置备份的邮箱标签名.</string>
+	<string name="ui_imap_folder_label_dialog_msg">备份信息将会在邮箱里通过这个标签标识.</string>
+	
+	<string name="ui_max_items_per_sync_label">备份选项</string>
+	<string name="ui_max_items_per_sync_desc">设置选择备份的内容.</string>
+
+	<string name="ui_dialog_missing_credentials_title">登陆信息</string>
+	<string name="ui_dialog_missing_credentials_msg">备份之前需要设置邮箱登陆信息.</string>
+	<string name="ui_dialog_sync_data_reset_title">重置备份信息</string>
+	<string name="ui_dialog_sync_data_reset_msg">备份信息已经修改，你需要重新设置你的密码、邮箱.</string>
+	<string name="ui_dialog_invalid_imap_folder_title">标签名错误</string>
+	<string name="ui_dialog_invalid_imap_folder_msg">标签名中只可以包含大小写的英文字母(A-Z, a-z).</string>
+
+	<string name="ui_dialog_need_first_manual_sync_title">首次备份</string>
+	<string name="ui_dialog_need_first_manual_sync_msg">你进行了账户配置，你想立刻开始备份么?</string>
+	
+	
+	<string name="err_could_not_create_folder">不能创建标签.</string>
+	<string name="err_sync_requires_login_info">请完善登陆信息再备份.</string>
+	<string name="err_communication_error">互联网连接错误.</string>
+	
+	<string name="alarm_notify_text">"选择暂停或关闭提醒"</string>
+	<string name="help_main_string">\t\tPlanBetter(最佳计划)是一个专注于历史、今天和未来的时间管理软件，透过事先的规划作为一种提醒和指引，督促用户在规定的时间内把事情做好。设置人生目标、记录心路历程，鼓励用户珍惜每一天的时间去提升自我，实现自身价值。\n\t\t本软件设有任务、目标、心语、日历、Gmail备份和桌面小工具六个主要功能。\n</string>
+	<string name="help_task">\t\t任务界面可以通过左右滑动屏幕在昨天、今天和未来三个视图进行切换。“昨天视图”可以快捷回顾昨天任务完成状况；“今天视图”利用帕累托原则将当天任务划分轻重缓急，并设有闹钟提醒、周期设置等功能；“未来视图”采用倒数日的方式提醒用户。</string>
+	<string name="help_goal">\t\t目标分为当前目标和历史目标两部分。当前目标允许用户设置人生三大目标，修改或删除当前目标的内容将自动保存至历史目标。浏览历史目标可点击放大查看，也可以删除历史目标</string>
+	<string name="help_tips">\t\t记录用户的心路历程，描绘生活的点点滴滴。</string>
+	<string name="help_history">\t\t左右滑动屏幕或者点击上方按钮可以切换月份，点击进入某一天，快捷查看当天任务完成状况，不错过每一段历史。</string>
+	<string name="help_setup">\t\t用户可以将信息备份至Gmail邮箱，随时随地查看使用历程。</string>
+	<string name="help_widget">\t\t桌面小工具是本软件的一大特色。使用步骤如下:\t1.在桌面空白区域长按或者点击菜单按钮添加\t2.选择窗口小部件\t3.点击"PlanBetter倒计时"或者"PlanBetter活动提醒"。</string>
+	
+	<string name="task_long_click_menu_edit">编辑活动</string>
+	<string name="task_long_click_menu_delete">删除活动</string>
+	<string name="task_long_click_menu_pull">推迟活动</string>
+	<string name="task_long_click_menu_title">活动选项</string>
+	
+</resources>

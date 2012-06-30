@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_weight="1"
+		android:fillViewport="true">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="vertical">
+
+			<LinearLayout android:layout_marginTop="20.0dp"
+				android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:orientation="horizontal" android:padding="5dp"
+				android:background="@drawable/layoutbg" android:gravity="center_vertical">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textColor="#ff3f3f3f"
+					android:textSize="16.0sp" android:text="内容:" />
+				<EditText android:id="@+id/et_task_info" android:hint="活动名称"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:singleLine="true" android:layout_weight="1"
+					android:layout_marginLeft="5dp" android:background="@drawable/edit_text" />
+			</LinearLayout>
+
+			<LinearLayout android:layout_marginTop="10.0dp"
+				android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:orientation="horizontal" android:padding="5dp"
+				android:background="@drawable/layoutbg" android:gravity="center_vertical">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textColor="#ff3f3f3f"
+					android:textSize="16.0sp" android:text="时间:" />
+				<TimePicker android:id="@+id/tp_task_time"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_weight="1" android:layout_marginLeft="5dp" />
+			</LinearLayout>
+
+			<LinearLayout android:layout_marginTop="10.0dp"
+				android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:orientation="horizontal" android:padding="5dp"
+				android:background="@drawable/layoutbg" android:gravity="center_vertical">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textColor="#ff3f3f3f"
+					android:textSize="16.0sp" android:text="地点:" />
+				<EditText android:id="@+id/et_task_position" android:hint="活动地点"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:singleLine="true" android:layout_weight="1"
+					android:layout_marginLeft="5dp" android:background="@drawable/edit_text" />
+			</LinearLayout>
+
+			<LinearLayout android:layout_marginTop="10.0dp"
+				android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:orientation="horizontal" android:padding="5dp"
+				android:background="@drawable/layoutbg" android:gravity="center_vertical">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textColor="#ff3f3f3f"
+					android:textSize="16.0sp" android:text="类型:" />
+				<RadioGroup android:id="@+id/task_rank_group"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_weight="1">
+					<RadioButton android:id="@+id/task_rank_first"
+						android:checked="true" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:text="@string/task_rank_first_text"
+						android:textColor="#ff3f3f3f" android:textSize="16.0sp" />
+					<RadioButton android:id="@+id/task_rank_second"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="@string/task_rank_second_text" android:textColor="#ff3f3f3f"
+						android:textSize="16.0sp" />
+					<RadioButton android:id="@+id/task_rank_third"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="@string/task_rank_third_text" android:textColor="#ff3f3f3f"
+						android:textSize="16.0sp" />
+					<RadioButton android:id="@+id/task_rank_fourth"
+						android:layout_width="wrap_content" android:layout_height="wrap_content"
+						android:text="@string/task_rank_fourth_text" android:textColor="#ff3f3f3f"
+						android:textSize="16.0sp" />
+				</RadioGroup>
+			</LinearLayout>
+
+			<LinearLayout android:layout_marginTop="10.0dp"
+				android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:orientation="horizontal" android:padding="5dp"
+				android:background="@drawable/layoutbg" android:gravity="center_vertical">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textColor="#ff3f3f3f"
+					android:textSize="16.0sp" android:text="提醒:" />
+				<CheckBox android:id="@+id/cb_time_alert"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_marginLeft="5dp" android:text="@string/task_time_alert_text"
+					android:textColor="#ff3f3f3f" android:textSize="16.0sp" />
+			</LinearLayout>
+			
+			<LinearLayout android:layout_marginTop="10.0dp"
+				android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:orientation="horizontal" android:padding="5dp"
+				android:background="@drawable/layoutbg" android:gravity="center_vertical">
+				<TextView android:layout_width="wrap_content" android:id="@+id/task_repeat"
+					android:layout_height="wrap_content" android:textColor="#ff3f3f3f"
+					android:textSize="16.0sp" android:text="重复:" />
+				<LinearLayout android:orientation="vertical"
+					android:layout_width="160dp"
+					android:layout_height="wrap_content"
+				>
+				<TextView android:layout_width="fill_parent" android:id="@+id/task_repeat_days_date" 
+					android:layout_height="wrap_content" android:textColor="#ff3f3f3f" android:layout_marginLeft="5dp"
+					android:textSize="15.0sp" />
+				<TextView android:layout_width="fill_parent" android:id="@+id/task_repeat_days_total" 
+					android:layout_height="wrap_content" android:textColor="#ff3f3f3f" android:layout_marginLeft="5dp"
+					android:textSize="15.0sp" />
+				</LinearLayout>
+				<Button android:id="@+id/task_repeat_days_button" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_marginTop="5dp"
+					android:layout_gravity="right" android:background="@android:drawable/ic_menu_more"
+					/>
+			</LinearLayout>
+
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

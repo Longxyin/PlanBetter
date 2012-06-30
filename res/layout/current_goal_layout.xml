@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/goal_bg">
+	<LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<ImageView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:background="@drawable/notepad" />
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="fill_parent" android:text="@string/current_goal_intro"
+			android:gravity="center_vertical" android:textColor="#000"
+			android:textSize="15sp" />
+	</LinearLayout>
+	<ListView android:id="@+id/current_goal_listview"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_marginTop="5dp" android:layout_marginBottom="10dp"
+		android:cacheColorHint="@android:color/transparent"
+		android:dividerHeight="10dp" android:divider="@android:color/transparent"
+		android:listSelector="@android:color/transparent"
+		android:drawSelectorOnTop="false" />
+</LinearLayout>

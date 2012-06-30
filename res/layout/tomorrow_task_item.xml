@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:padding="5dp"
+	android:background="@drawable/recommend_bg"
+	android:gravity="center_vertical"
+	>
+
+	<!-- 任务名称、距离的天数图标 -->
+	<RelativeLayout android:layout_width="fill_parent" android:layout_alignParentLeft="true"
+			android:layout_height="50dp" android:layout_gravity="left">
+
+			<TextView 
+				android:layout_marginLeft="8dp" android:layout_marginTop="8dp"
+				android:textSize="25.0sp" android:typeface="serif" android:gravity="center_vertical"
+				android:textColor="@android:color/white" android:id="@+id/tomorrow_item_textView_datematter"
+				android:layout_width="200dp" android:layout_height="wrap_content"
+				android:singleLine="true"
+				android:layout_alignParentLeft="true" 
+				/>
+
+			<TextView android:textSize="35.0sp" android:typeface="serif"
+				android:layout_marginLeft="2dp" android:textColor="@android:color/white"
+				android:id="@+id/tomorrow_item_textView_daysleft" android:layout_width="85dp"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@+id/tomorrow_item_textView_tomorrow_day" 
+				android:gravity="center_horizontal"/>
+
+			<TextView android:textSize="25.0sp" android:typeface="serif" android:layout_marginTop="8dp"
+				android:textColor="@android:color/white" android:id="@+id/tomorrow_item_textView_tomorrow_day"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:singleLine="true" android:text="天"
+				android:layout_alignParentRight="true" />
+		</RelativeLayout>
+</LinearLayout>  

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="normal_height">64.0dp</dimen>
+    <dimen name="expanded_height">128.0dp</dimen>
+    <dimen name="widget_font_size">22.0dp</dimen>
+    <dimen name="day_container_width">330.0dp</dimen>
+    <dimen name="widget_task_width">285.0dp</dimen>
+    <dimen name="widget_task_height">300.0dp</dimen>
+    <dimen name="task_item_name_width">235dp</dimen>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <color name="blue">#ffccddff</color>
+    <color name="grey">#ff808080</color>
+    <color name="pls_talk_normal">#ff707277</color>
+    <color name="search_hint">#ffcccccc</color>
+    
+    <color name="black">#ff2b2b2b</color>
+    <color name="orange">#ffde7426</color>
+    <color name="white">#ffffffff</color>
+    <color name="Red">#ffff0000</color>
+    <color name="Green">#ff00ff00</color>
+    <color name="days_color">#ff698d0c</color>
+    <color name="save_button">#ffb1380d</color>
+    <color name="title">#ff672d13</color>
+    <color name="app_title">#ff44180b</color>
+    <color name="widget_title">#ff95949a</color>
+    <color name="widget_days">#ff433d3c</color>
+    <color name="widget_silver">#ff000b00</color>
+    <color name="widget_text">#ff2a83a2</color>
+    <color name="guide_title_color">#ff383c3c</color>
+    <color name="alarm_line">#ff383c3c</color>
+    <color name="alarm_btn_bg">#ffdcdddd</color>
+    <color name="white_special">#ffcccccc</color>
+    
+    <color name="status_idle">#cccccc</color>
+	<color name="status_done">#637a47</color>
+	<color name="status_sync">#cc9900</color>
+	<color name="status_error">#ac4444</color>
+	<color name="help_bg">#ff666666</color>
+</resources>

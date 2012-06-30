@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@+id/tomorrow_widget_layout_inside" xmlns:android="http://schemas.android.com/apk/res/android"
+		android:background="@drawable/shape_selector" android:layout_width="215.0dp"
+		android:layout_height="70.0dp" android:layout_marginLeft="10.0dp"
+		android:layout_marginTop="5.0dp" android:layout_marginRight="10.0dp"
+		android:layout_marginBottom="5.0dp">
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="65.0dp" android:layout_height="fill_parent"
+			android:layout_marginLeft="5.0dp">
+			<TextView android:textSize="14.0sp" android:textColor="@color/white_special"
+				android:gravity="bottom|center" android:id="@+id/tomorrow_widget_title"
+				android:layout_width="65.0dp" android:layout_height="30.0dp" />
+			<TextView android:textSize="22.0sp" android:textStyle="bold"
+				android:textColor="@color/white_special" android:gravity="center"
+				android:id="@+id/tomorrow_widget_days" android:layout_width="65.0dp"
+				android:layout_height="30.0dp" android:layout_marginBottom="5.0dp" />
+		</LinearLayout>
+		<LinearLayout
+			android:background="@color/widget_silver" android:layout_width="1.0px"
+			android:layout_height="fill_parent" android:layout_marginTop="5.0dp"
+			android:layout_marginBottom="5.0dp" />
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:layout_marginLeft="5.0dp" android:layout_marginRight="5.0dp">
+			<TextView android:textSize="14.0sp" android:textColor="@color/white_special"
+				android:gravity="bottom|center" android:id="@+id/tomorrow_widget_date"
+				android:layout_width="132.0dp" android:layout_height="30.0dp" />
+			<TextView android:textSize="18.0sp" android:textStyle="bold"
+				android:textColor="@color/white_special" android:ellipsize="end"
+				android:gravity="center" android:id="@+id/tomorrow_widget_event"
+				android:layout_width="132.0dp" android:layout_height="30.0dp"
+				android:layout_marginBottom="5.0dp" android:singleLine="true" />
+		</LinearLayout>
+	</LinearLayout>

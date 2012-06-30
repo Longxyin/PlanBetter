@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_height="fill_parent" android:layout_weight="1" android:background="@drawable/task_today_bg"
+	android:fillViewport="true">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="@dimen/day_container_width" android:paddingLeft="15.0dp" android:paddingTop="7.0dp"
+		android:paddingRight="15.0dp" android:paddingBottom="15.0dp"
+		android:layout_height="fill_parent">
+		<RelativeLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<TextView android:textSize="30.0sp" android:typeface="serif"
+				android:textColor="@android:color/black" android:id="@+id/textView_today"
+				android:focusable="true" android:focusableInTouchMode="true"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="@string/label_today" android:layout_alignParentLeft="true" />
+			<TextView android:textSize="18.0sp" android:typeface="serif"
+				android:textColor="@android:color/black" android:id="@+id/textView_today_date"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_below="@id/textView_today" />
+			<FrameLayout android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginTop="35.0dp"
+				android:layout_alignParentRight="true">
+				<Button android:textSize="15.0sp" android:typeface="serif"
+					android:id="@+id/today_add_task_btn" android:background="@drawable/bg_add_task_btn"
+					android:layout_width="wrap_content" android:layout_height="40.0dp"
+					android:text="@string/add_task_label" android:layout_alignBaseline="@id/textView_today_date" />
+			</FrameLayout>
+		</RelativeLayout>
+		<ListView android:id="@+id/today_task_listview"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginTop="5dp" android:layout_marginBottom="10dp"
+			android:cacheColorHint="@android:color/transparent" android:dividerHeight="10dp"
+			android:divider="@android:color/transparent" android:listSelector="@android:color/transparent"
+			android:drawSelectorOnTop="false" />
+	</LinearLayout>
+</ScrollView>

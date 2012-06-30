@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	<ScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_weight="1"
+		android:fillViewport="true">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="vertical">
+
+			<LinearLayout android:layout_marginTop="20.0dp"
+				android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:orientation="horizontal" android:padding="5dp"
+				android:background="@drawable/layoutbg" android:gravity="center_vertical">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:textColor="#ff3f3f3f"
+					android:textSize="16.0sp" android:text="内容:" />
+				<EditText android:id="@+id/et_tomorrow_task_info" android:hint="活动名称"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:singleLine="true" android:layout_weight="1"
+					android:layout_marginLeft="5dp" android:background="@drawable/edit_text" />
+			</LinearLayout>
+
+			<LinearLayout android:layout_marginTop="10.0dp" android:orientation="vertical"
+				android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+			    android:padding="5dp" 
+				android:background="@drawable/layoutbg" >
+				<TextView android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" android:textColor="#ff3f3f3f"
+					android:textSize="16.0sp" android:text="日期:" />
+				<DatePicker android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/dp_tomorrow_task_date"></DatePicker>
+			</LinearLayout>
+
+			<LinearLayout android:layout_marginTop="10.0dp"
+				android:layout_marginLeft="15.0dp" android:layout_marginRight="15.0dp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:orientation="horizontal" android:padding="5dp"
+				android:background="@drawable/layoutbg" android:gravity="center_vertical">
+					<TextView android:layout_width="wrap_content" 
+					android:layout_height="wrap_content" android:textColor="#ff3f3f3f"
+					android:textSize="16.0sp" android:text="时间:" />
+			
+					<TimePicker android:id="@+id/tp_tomorrow_task_time"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+				     />	
+			</LinearLayout>
+			<LinearLayout android:id="@+id/linearLayout1"
+				android:layout_marginLeft="15.0dp" android:layout_width="fill_parent"
+				android:orientation="horizontal" android:layout_marginRight="15.0dp"
+				android:background="@drawable/layoutbg" android:layout_marginTop="10.0dp"
+				android:layout_height="wrap_content" android:padding="5dp"
+				android:gravity="center_vertical">
+				<TextView android:layout_width="wrap_content"
+					android:text="提醒:" android:layout_height="wrap_content"
+					android:textColor="#ff3f3f3f" android:textSize="16.0sp">
+				</TextView>
+				<CheckBox android:layout_width="wrap_content"
+						android:text="@string/task_time_alert_text" android:layout_height="wrap_content"
+						android:textColor="#ff3f3f3f" android:layout_marginLeft="5dp"
+						android:textSize="16.0sp" android:id="@+id/cb_tomorrow_time_alert">
+				</CheckBox>		
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

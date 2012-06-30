@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:gravity="center">
+
+	<LinearLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_gravity="center"
+		android:gravity="center_horizontal" android:background="@drawable/dialog"
+		android:orientation="vertical">
+
+		<TextView android:text="@string/task_alert_dialog_title"
+			style="?android:attr/textAppearanceLarge" android:padding="5dip"
+			android:singleLine="true" android:ellipsize="end" android:gravity="center"
+			android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+		<ImageView android:layout_width="fill_parent"
+			android:layout_height="1dip" android:scaleType="fitXY"
+			android:gravity="fill_horizontal" android:src="@drawable/dialog_divider_horizontal_light"
+			android:layout_marginLeft="10dip" android:layout_marginRight="10dip" />
+
+		<TextView android:layout_width="fill_parent"
+			android:layout_margin="5dp" android:id="@+id/task_alert_dialog_content"
+			android:textSize="23sp" android:textStyle="bold" android:paddingTop="30dip"
+			android:paddingBottom="30dip" android:gravity="center_horizontal"
+			android:layout_height="fill_parent"></TextView>
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal"
+			android:gravity="center" android:paddingTop="3dp"
+			android:background="@drawable/android:bottom_bar">
+			<Button android:layout_height="wrap_content"
+				android:text="@string/task_alert_dialog_confirm"
+				android:layout_marginLeft="10dp" android:id="@+id/task_alert_dialog_confirm_btn"
+				android:layout_width="fill_parent">
+			</Button>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
