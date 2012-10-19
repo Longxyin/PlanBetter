@@ -1,4 +1,4 @@
 PlanBetter
 ==========
 
-PlanBetter is a task management tool on android.
+PlanBetter is a task management tool on Android 2.1.
